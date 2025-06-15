@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: #f8f8f8;
+    margin-bottom: 40px;
+}
+
+/* Button Group Styles */
+.button-group {
+    margin-bottom: 30px;
+}
+
+.button-group button {
+    margin: 0 10px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fbb034;
+    color: #121212;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-group button:hover {
+    background-color: #ff8800;
+    transform: scale(1.05);
+}
+
+.button-group button:focus {
+    outline: none;
+}
+
+/* Contest Section and Card Styles */
+.contest-section {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards within the section */
+    gap: 20px; /* Add gap between cards for better spacing */
+}
+
+.contest-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(100% / 3 - 40px); /* Adjust the width for 3 cards per row with spacing */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-body h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #f8f8f8;
+}
+
+.card-body p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #cfcfcf;
+}
+
+.card-body a {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #fbb034;
+    color: #121212;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-body a:hover {
+    background-color: #ff8800;
+    transform: scale(1.05);
+}
+
+.card-body a i {
+    margin-left: 8px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

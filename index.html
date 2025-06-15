@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Contest Tracker</h1>
+        <div class="button-group">
+            <button onclick="loadContests('codeforces.com')" id="codeforces-btn"><i class="fas fa-code"></i> Codeforces</button>
+            <button onclick="loadContests('codechef.com')" id="codechef-btn"><i class="fas fa-utensils"></i> CodeChef</button>
+            <button onclick="loadContests('leetcode.com')" id="leetcode-btn"><i class="fas fa-laptop-code"></i> LeetCode</button>
+            <button onclick="loadContests('atcoder.jp')" id="atcoder-btn"><i class="fas fa-gamepad"></i> AtCoder</button>
+        </div>
+        <div class="contest-section" id="contest-section">
+            <!-- Contest cards will be dynamically injected here -->
+        </div>
+    </div>
+</body>
+</html>

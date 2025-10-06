@@ -17,8 +17,8 @@
 
 1️⃣ **Clone the Repository:**  
    ```bash
-   git clone https://github.com/Amulya2712/Contest_Tracker.git
-   cd Contest_Tracker
+   git clone https://github.com/Charitha1436/contest_tracker.git
+   cd contest_tracker
    ```  
 2️⃣ **Install Dependencies:**  
    ```bash
